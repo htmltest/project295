@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Академия N3COM</title>
+
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="js/select2/select2.css">
+        <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- side -->
+            <div class="side">
+                <a href="#" class="side-toggle"><svg><use xlink:href="images/sprite.svg#side-toggle"></use></svg></a>
+                <div class="side-container">
+                    <div class="side-logo"><img src="images/logo.svg" alt=""><img src="images/logo-minify.svg" alt=""></div>
+
+                    <div class="side-user">
+                        <a href="#" class="side-user-link">
+                            <div class="side-user-avatar"><img src="files/side-user-avatar.jpg" alt=""></div>
+                            <div class="side-user-info">
+                                <div class="side-user-name">Вильгельмина</div>
+                                <div class="side-user-email">vilg@yandex.ru</div>
+                            </div>
+                        </a>
+                        <a href="#" class="side-user-notify"><svg><use xlink:href="images/sprite.svg#side-user-notify"></use></svg><span>9+</span></a>
+                    </div>
+
+                    <div class="side-menu">
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-main"></use></svg><span>Главная</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-online"></use></svg><span>Онлайн-курсы</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-offline"></use></svg><span>Офлайн-курсы</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-serts"></use></svg><span>Мои сертификаты</span></a>
+                        <a href="#" class="active"><svg><use xlink:href="images/sprite.svg#side-menu-web"></use></svg><span>Вебинары</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-marketing"></use></svg><span>Маркетинговые материалы</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-docs"></use></svg><span>Документация</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-support"></use></svg><span>Техподдержка</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-contacts"></use></svg><span>Контакты</span></a>
+                    </div>
+                </div>
+                <div class="side-bottom">
+                    <a href="#" class="side-logout"><span>Выйти</span><svg><use xlink:href="images/sprite.svg#side-logout"></use></svg></a>
+                </div>
+
+                <a href="#" class="mobile-menu-link"><svg><use xlink:href="images/sprite.svg#mobile-menu-link"></use></svg></a>
+                <a href="#" class="mobile-menu-close"><svg><use xlink:href="images/sprite.svg#webinar-cancel"></use></svg></a>
+            </div>
+            <!-- side END -->
+
+            <!-- container -->
+            <div class="container">
+
+                <!-- content -->
+                <div class="content">
+
+                    <!-- content block -->
+                    <div class="content-block">
+
+                        <div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a href="#" title="Главная" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                    <meta itemprop="position" content="1">
+                                </a>
+                            </div>
+                            <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <div title="Вебинары" itemprop="item">
+                                    <span itemprop="name">Вебинары</span>
+                                    <meta itemprop="position" content="2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-header">
+                            <h1 class="page-header-title">Вебинары</h1>
+                        </div>
+
+                        <!-- courses filter -->
+                        <div class="courses-filter">
+                            <form action="#" method="post">
+                                <div class="courses-filter-types">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="courses-filter-types-inner">
+                                                    <label><input type="radio" name="type" value="all" checked><span>Все<em>54</em></span></label>
+                                                    <label><input type="radio" name="type" value="request"><span>Анонсы<em>34</em></span></label>
+                                                    <label><input type="radio" name="type" value="progress"><span>Участвую<em>10</em></span></label>
+                                                    <label><input type="radio" name="type" value="completed"><span>Участвовал<em>10</em></span></label>
+                                                    <label><input type="radio" name="type" value="rejected"><span>Прошедшие<em>10</em></span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- courses filter END -->
+
+                        <!-- webinars -->
+                        <div class="webinars">
+
+                            <div class="webinars-item">
+                                <div class="courses-item-preview">
+                                    <img src="files/webinars-01.jpg" alt="">
+                                    <div class="courses-item-novelty">Анонс</div>
+                                    <div class="courses-item-completed"><strong><svg><use xlink:href="images/sprite.svg#courses-item-completed"></use></svg>Участвую</strong></div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="webinars-item-title">Архитектура сетевой безопасности предприятия.</div>
+                                    <div class="webinars-item-time">16 апреля 2026, 15:00</div>
+                                </div>
+                                <a href="#" class="btn btn-blue">подробнее</a>
+                            </div>
+
+                            <div class="webinars-item">
+                                <div class="courses-item-preview">
+                                    <img src="files/webinars-02.jpg" alt="">
+                                    <div class="courses-item-novelty">Анонс</div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="webinars-item-title">Предотвращение атак на АСУ ТП</div>
+                                    <div class="webinars-item-time">15 апреля 2026, 15:00</div>
+                                </div>
+                                <a href="#" class="btn btn-blue">подробнее</a>
+                            </div>
+
+                            <div class="webinars-item">
+                                <div class="courses-item-preview">
+                                    <img src="files/webinars-03.jpg" alt="">
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="webinars-item-title">Мониторинг и реагирование на инциденты.</div>
+                                    <div class="webinars-item-time">14 апреля 2026, 15:00</div>
+                                </div>
+                                <a href="#" class="btn btn-blue">подробнее</a>
+                            </div>
+
+                            <div class="webinars-item completed">
+                                <div class="courses-item-preview">
+                                    <img src="files/webinars-04.jpg" alt="">
+                                    <div class="courses-item-completed"><strong><svg><use xlink:href="images/sprite.svg#courses-item-completed"></use></svg>Участвовал</strong></div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="webinars-item-title">Управление уязвимостями: от теории к практике. Синхронный формат.</div>
+                                    <div class="webinars-item-time">13 апреля 2026, 15:00</div>
+                                </div>
+                                <a href="#" class="btn btn-blue">подробнее</a>
+                            </div>
+
+                            <div class="webinars-item">
+                                <div class="courses-item-preview">
+                                    <img src="files/webinars-05.jpg" alt="">
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="webinars-item-title">Безопасность приложений: от хаоса к системному управлению</div>
+                                    <div class="webinars-item-time">1 апреля 2026, 15:00</div>
+                                </div>
+                                <a href="#" class="btn btn-blue">подробнее</a>
+                            </div>
+
+                        </div>
+                        <!-- webinars END -->
+
+                        <div class="pager">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <span>...</span>
+                            <a href="#">125</a>
+                            <a href="#" class="pager-next"><svg><use xlink:href="images/sprite.svg#pager-next"></use></svg></a>
+                        </div>
+
+                    </div>
+                    <!-- content block END -->
+
+                </div>
+                <!-- content END -->
+
+                <!-- footer -->
+                <div class="footer">
+                    <div class="footer-content">
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-title">Контакты</div>
+                            <div class="footer-contacts-text">
+                                <a href="tel:+74951473344">+7 (495) 147-33-44</a><br>
+                                <a href="mailto:info@n3com.ru">info@n3com.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-title">Юр адрес</div>
+                            <div class="footer-contacts-text">173003, г. Великий Новгород,<br> Пер. Базовый, д.1</div>
+                        </div>
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-title">Обособленное подразделение</div>
+                            <div class="footer-contacts-text">115432 г. Москва,<br> Проспект Андропова, 18 к 5 ИНН 9725091298</div>
+                        </div>
+                        <div class="footer-social">
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-vk"></use></svg></a>
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-tg"></use></svg></a>
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-max"></use></svg></a>
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-rt"></use></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-link"><a href="#">Политика конфиденциальности</a></div>
+                        <div class="footer-bottom-link"><a href="#">Правила пользования ресурсом</a></div>
+                        <div class="footer-copyrights">2026&nbsp;&copy; ООО &laquo;Н3КОМ&raquo;</div>
+                    </div>
+                </div>
+                <!-- footer END -->
+
+            </div>
+            <!-- container END -->
+
+        </div>
+        <!-- wrapper END -->
+
+        <script>
+            var pathTemplate = './';
+        </script>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/fileupload/jquery.ui.widget.js"></script>
+        <script src="js/fileupload/jquery.iframe-transport.js"></script>
+        <script src="js/fileupload/jquery.fileupload.js"></script>
+        <script src="js/fileupload/jquery.fileupload-ui.js"></script>
+        <script src="js/swiper/swiper-bundle.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

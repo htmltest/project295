@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Академия N3COM</title>
+
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="js/select2/select2.css">
+        <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- side -->
+            <div class="side">
+                <a href="#" class="side-toggle"><svg><use xlink:href="images/sprite.svg#side-toggle"></use></svg></a>
+                <div class="side-container">
+                    <div class="side-logo"><img src="images/logo.svg" alt=""><img src="images/logo-minify.svg" alt=""></div>
+
+                    <div class="side-user">
+                        <a href="#" class="side-user-link">
+                            <div class="side-user-avatar"><img src="files/side-user-avatar.jpg" alt=""></div>
+                            <div class="side-user-info">
+                                <div class="side-user-name">Вильгельмина</div>
+                                <div class="side-user-email">vilg@yandex.ru</div>
+                            </div>
+                        </a>
+                        <a href="#" class="side-user-notify"><svg><use xlink:href="images/sprite.svg#side-user-notify"></use></svg><span>9+</span></a>
+                    </div>
+
+                    <div class="side-menu">
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-main"></use></svg><span>Главная</span></a>
+                        <a href="#" class="active"><svg><use xlink:href="images/sprite.svg#side-menu-online"></use></svg><span>Онлайн-курсы</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-offline"></use></svg><span>Офлайн-курсы</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-serts"></use></svg><span>Мои сертификаты</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-web"></use></svg><span>Вебинары</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-marketing"></use></svg><span>Маркетинговые материалы</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-docs"></use></svg><span>Документация</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-support"></use></svg><span>Техподдержка</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-contacts"></use></svg><span>Контакты</span></a>
+                    </div>
+                </div>
+                <div class="side-bottom">
+                    <a href="#" class="side-logout"><span>Выйти</span><svg><use xlink:href="images/sprite.svg#side-logout"></use></svg></a>
+                </div>
+
+                <a href="#" class="mobile-menu-link"><svg><use xlink:href="images/sprite.svg#mobile-menu-link"></use></svg></a>
+                <a href="#" class="mobile-menu-close"><svg><use xlink:href="images/sprite.svg#webinar-cancel"></use></svg></a>
+            </div>
+            <!-- side END -->
+
+            <!-- container -->
+            <div class="container">
+
+                <!-- content -->
+                <div class="content">
+
+                    <!-- content block -->
+                    <div class="content-block">
+
+                        <div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a href="#" title="Главная" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                    <meta itemprop="position" content="1">
+                                </a>
+                            </div>
+                            <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <div title="Онлайн-курсы" itemprop="item">
+                                    <span itemprop="name">Онлайн-курсы</span>
+                                    <meta itemprop="position" content="2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-header">
+                            <h1 class="page-header-title">Онлайн-курсы</h1>
+                        </div>
+
+                        <!-- courses filter -->
+                        <div class="courses-filter">
+                            <form action="#" method="post">
+                                <div class="courses-filter-types">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="courses-filter-types-inner">
+                                                    <label><input type="radio" name="type" value="all" checked><span>Все<em>54</em></span></label>
+                                                    <label><input type="radio" name="type" value="request"><span>заявка подана<em>34</em></span></label>
+                                                    <label><input type="radio" name="type" value="progress"><span>прохожу<em>10</em></span></label>
+                                                    <label><input type="radio" name="type" value="completed"><span>пройдено<em>10</em></span></label>
+                                                    <label><input type="radio" name="type" value="rejected"><span>отклонено<em>10</em></span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="courses-filter-sort">
+                                    <div class="courses-filter-sort-icon"><svg><use xlink:href="images/sprite.svg#courses-filter-sort"></use></svg></div>
+                                    <div class="courses-filter-sort-select">
+                                        <div class="courses-filter-sort-select-current"><span></span><svg><use xlink:href="images/sprite.svg#courses-filter-sort-select"></use></svg></div>
+                                        <div class="courses-filter-sort-select-list">
+                                            <label><input type="radio" name="sort" value="name"><span>По названию</span></label>
+                                            <label><input type="radio" name="sort" value="date"><span>По дате</span></label>
+                                            <label><input type="radio" name="sort" value="time" checked><span>По длительности</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- courses filter END -->
+
+                        <!-- courses -->
+                        <div class="courses">
+
+                            <div class="courses-item">
+                                <div class="courses-item-preview">
+                                    <img src="files/courses-01.jpg" alt="">
+                                    <div class="courses-item-novelty">Новинка</div>
+                                    <div class="courses-item-progress">4/14<svg><use xlink:href="images/sprite.svg#courses-item-progress"></use></svg>Прохожу</div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="courses-item-props">
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-clock"></use></svg>27 дней</div>
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-modules"></use></svg>14 модулей</div>
+                                    </div>
+                                    <h3>Архитектура сетевой безопасности предприятия.</h3>
+                                    <a href="#" class="btn">Продолжить обучение</a>
+                                </div>
+                            </div>
+
+                            <div class="courses-item">
+                                <div class="courses-item-preview">
+                                    <img src="files/courses-02.jpg" alt="">
+                                    <div class="courses-item-progress">7/10<svg><use xlink:href="images/sprite.svg#courses-item-progress"></use></svg>Прохожу</div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="courses-item-props">
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-clock"></use></svg>18 дней</div>
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-modules"></use></svg>10 модулей</div>
+                                    </div>
+                                    <h3>Мониторинг и реагирование на инциденты.</h3>
+                                    <a href="#" class="btn">Продолжить обучение</a>
+                                </div>
+                            </div>
+
+                            <div class="courses-item">
+                                <div class="courses-item-preview">
+                                    <img src="files/courses-03.jpg" alt="">
+                                    <div class="courses-item-novelty">Новинка</div>
+                                    <div class="courses-item-request"><svg><use xlink:href="images/sprite.svg#courses-item-request"></use></svg>Заявка подана</div>
+                                    <div class="courses-item-lab"><svg><use xlink:href="images/sprite.svg#courses-item-lab"></use></svg>Лабораторная работа</div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="courses-item-props">
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-clock"></use></svg>34 дней</div>
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-modules"></use></svg>10 модулей</div>
+                                    </div>
+                                    <h3>Управление уязвимостями: от теории к практике. Синхронный формат.</h3>
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="courses-item">
+                                <div class="courses-item-preview">
+                                    <img src="files/courses-04.jpg" alt="">
+                                    <div class="courses-item-lab"><svg><use xlink:href="images/sprite.svg#courses-item-lab"></use></svg>Лабораторная работа</div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="courses-item-props">
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-clock"></use></svg>120 дней</div>
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-modules"></use></svg>10 модулей</div>
+                                    </div>
+                                    <h3>Практика защиты корпоративных систем.</h3>
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="courses-item">
+                                <div class="courses-item-preview">
+                                    <img src="files/courses-05.jpg" alt="">
+                                    <div class="courses-item-novelty">Новинка</div>
+                                    <div class="courses-item-progress">2/17<svg><use xlink:href="images/sprite.svg#courses-item-progress"></use></svg>Прохожу</div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="courses-item-props">
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-clock"></use></svg>120 дней</div>
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-modules"></use></svg>17 модулей</div>
+                                    </div>
+                                    <h3>Анализ сетевого трафика и выявление атак.</h3>
+                                    <a href="#" class="btn">Продолжить обучение</a>
+                                </div>
+                            </div>
+
+                            <div class="courses-item completed">
+                                <div class="courses-item-preview">
+                                    <img src="files/courses-06.jpg" alt="">
+                                    <div class="courses-item-completed"><span>5</span><strong><svg><use xlink:href="images/sprite.svg#courses-item-completed"></use></svg>Пройдено</strong></div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="courses-item-props">
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-clock"></use></svg>120 дней</div>
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-modules"></use></svg>5 модулей</div>
+                                    </div>
+                                    <h3>Безопасность облачной инфраструктуры.</h3>
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="courses-item">
+                                <div class="courses-item-preview">
+                                    <img src="files/courses-07.jpg" alt="">
+                                    <div class="courses-item-novelty">Новинка</div>
+                                    <div class="courses-item-progress">0/10</div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="courses-item-props">
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-clock"></use></svg>120 дней</div>
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-modules"></use></svg>10 модулей</div>
+                                    </div>
+                                    <h3>Этичный хакинг и тестирование на проникновение.</h3>
+                                    <a href="#" class="btn">Начать обучение</a>
+                                </div>
+                            </div>
+
+                            <div class="courses-item">
+                                <div class="courses-item-preview">
+                                    <img src="files/courses-08.jpg" alt="">
+                                    <div class="courses-item-novelty">Новинка</div>
+                                    <div class="courses-item-rejected"><svg><use xlink:href="images/sprite.svg#courses-item-rejected"></use></svg>Отклонено</div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="courses-item-props">
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-clock"></use></svg>120 дней</div>
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-modules"></use></svg>10 модулей</div>
+                                    </div>
+                                    <h3>Криптография и защита данных.</h3>
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="courses-item completed">
+                                <div class="courses-item-preview">
+                                    <img src="files/courses-09.jpg" alt="">
+                                    <div class="courses-item-completed"><span>18</span><strong><svg><use xlink:href="images/sprite.svg#courses-item-completed"></use></svg>Пройдено</strong></div>
+                                    <div class="courses-item-lab"><svg><use xlink:href="images/sprite.svg#courses-item-lab"></use></svg>Лабораторная работа</div>
+                                </div>
+                                <div class="courses-item-content">
+                                    <div class="courses-item-props">
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-clock"></use></svg>120 дней</div>
+                                        <div class="courses-item-prop"><svg><use xlink:href="images/sprite.svg#icon-modules"></use></svg>18 модулей</div>
+                                    </div>
+                                    <h3>Цифровая криминалистика и расследование инцидентов.</h3>
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- courses END -->
+
+                        <div class="pager">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <span>...</span>
+                            <a href="#">125</a>
+                            <a href="#" class="pager-next"><svg><use xlink:href="images/sprite.svg#pager-next"></use></svg></a>
+                        </div>
+
+                    </div>
+                    <!-- content block END -->
+
+                </div>
+                <!-- content END -->
+
+                <!-- footer -->
+                <div class="footer">
+                    <div class="footer-content">
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-title">Контакты</div>
+                            <div class="footer-contacts-text">
+                                <a href="tel:+74951473344">+7 (495) 147-33-44</a><br>
+                                <a href="mailto:info@n3com.ru">info@n3com.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-title">Юр адрес</div>
+                            <div class="footer-contacts-text">173003, г. Великий Новгород,<br> Пер. Базовый, д.1</div>
+                        </div>
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-title">Обособленное подразделение</div>
+                            <div class="footer-contacts-text">115432 г. Москва,<br> Проспект Андропова, 18 к 5 ИНН 9725091298</div>
+                        </div>
+                        <div class="footer-social">
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-vk"></use></svg></a>
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-tg"></use></svg></a>
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-max"></use></svg></a>
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-rt"></use></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-link"><a href="#">Политика конфиденциальности</a></div>
+                        <div class="footer-bottom-link"><a href="#">Правила пользования ресурсом</a></div>
+                        <div class="footer-copyrights">2026&nbsp;&copy; ООО &laquo;Н3КОМ&raquo;</div>
+                    </div>
+                </div>
+                <!-- footer END -->
+
+            </div>
+            <!-- container END -->
+
+        </div>
+        <!-- wrapper END -->
+
+        <script>
+            var pathTemplate = './';
+        </script>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/fileupload/jquery.ui.widget.js"></script>
+        <script src="js/fileupload/jquery.iframe-transport.js"></script>
+        <script src="js/fileupload/jquery.fileupload.js"></script>
+        <script src="js/fileupload/jquery.fileupload-ui.js"></script>
+        <script src="js/swiper/swiper-bundle.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

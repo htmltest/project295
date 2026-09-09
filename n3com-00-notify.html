@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Академия N3COM</title>
+
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="js/select2/select2.css">
+        <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- side -->
+            <div class="side">
+                <a href="#" class="side-toggle"><svg><use xlink:href="images/sprite.svg#side-toggle"></use></svg></a>
+                <div class="side-container">
+                    <div class="side-logo"><img src="images/logo.svg" alt=""><img src="images/logo-minify.svg" alt=""></div>
+
+                    <div class="side-user">
+                        <a href="#" class="side-user-link">
+                            <div class="side-user-avatar"><img src="files/side-user-avatar.jpg" alt=""></div>
+                            <div class="side-user-info">
+                                <div class="side-user-name">Вильгельмина</div>
+                                <div class="side-user-email">vilg@yandex.ru</div>
+                            </div>
+                        </a>
+                        <a href="#" class="side-user-notify active"><svg><use xlink:href="images/sprite.svg#side-user-notify"></use></svg><span>9+</span></a>
+                    </div>
+
+                    <div class="side-menu">
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-main"></use></svg><span>Главная</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-online"></use></svg><span>Онлайн-курсы</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-offline"></use></svg><span>Офлайн-курсы</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-serts"></use></svg><span>Мои сертификаты</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-web"></use></svg><span>Вебинары</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-marketing"></use></svg><span>Маркетинговые материалы</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-docs"></use></svg><span>Документация</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-support"></use></svg><span>Техподдержка</span></a>
+                        <a href="#"><svg><use xlink:href="images/sprite.svg#side-menu-contacts"></use></svg><span>Контакты</span></a>
+                    </div>
+                </div>
+                <div class="side-bottom">
+                    <a href="#" class="side-logout"><span>Выйти</span><svg><use xlink:href="images/sprite.svg#side-logout"></use></svg></a>
+                </div>
+
+                <a href="#" class="mobile-menu-link"><svg><use xlink:href="images/sprite.svg#mobile-menu-link"></use></svg></a>
+                <a href="#" class="mobile-menu-close"><svg><use xlink:href="images/sprite.svg#webinar-cancel"></use></svg></a>
+            </div>
+            <!-- side END -->
+
+            <!-- container -->
+            <div class="container">
+
+                <!-- content -->
+                <div class="content">
+
+                    <!-- content block -->
+                    <div class="content-block">
+
+                        <div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a href="#" title="Главная" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                    <meta itemprop="position" content="1">
+                                </a>
+                            </div>
+                            <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <div title="Уведомления" itemprop="item">
+                                    <span itemprop="name">Уведомления</span>
+                                    <meta itemprop="position" content="2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-header">
+                            <h1 class="page-header-title">Уведомления</h1>
+                            <div class="page-header-btn"><a href="#" class="btn btn-border">Управлять уведомлениями<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></a></div>
+                        </div>
+
+                        <!-- notify -->
+                        <div class="notify">
+                            <div class="notify-content">
+                                <div class="notify-headers">
+                                    <div class="notify-header-date">Дата</div>
+                                    <div class="notify-header-time">Время</div>
+                                    <div class="notify-header-text">Текст уведомления</div>
+                                    <div class="notify-header-status">Статус</div>
+                                </div>
+                                <div class="notify-item new">
+                                    <div class="notify-item-date">27 мая 2026</div>
+                                    <div class="notify-item-time">14:32:11</div>
+                                    <div class="notify-item-text">Еженедельный отчёт: вы выполнили 7 из 10 модулей курса. Текущий прогресс: 70%. Для завершения обучения осталось 3 модуля.</div>
+                                    <div class="notify-item-status">Прочитать</div>
+                                </div>
+                                <div class="notify-item new">
+                                    <div class="notify-item-date">26 мая 2026</div>
+                                    <div class="notify-item-time">14:32:11</div>
+                                    <div class="notify-item-text">Вы набрали 85% в тесте Модуля 6. Хороший результат! Для улучшения понимания темы рекомендуем повторно изучить раздел «Автоматизация реагирования».</div>
+                                    <div class="notify-item-status">Прочитать</div>
+                                </div>
+                                <div class="notify-item new">
+                                    <div class="notify-item-date">25 мая 2026</div>
+                                    <div class="notify-item-time">14:32:11</div>
+                                    <div class="notify-item-text">Поздравляем! Вы завершили курс «Мониторинг и реагирование на инциденты». Сертификат доступен для скачивания в личном кабинете.</div>
+                                    <div class="notify-item-status">Прочитать</div>
+                                </div>
+                                <div class="notify-item new">
+                                    <div class="notify-item-date">24 мая 2026</div>
+                                    <div class="notify-item-time">14:32:11</div>
+                                    <div class="notify-item-text">Срочно: обнаружена техническая проблема с доступом к заданиям 48-52. Инженеры уже работают над устранением. Приносим извинения за неудобства.</div>
+                                    <div class="notify-item-status">Прочитать</div>
+                                </div>
+                                <div class="notify-item">
+                                    <div class="notify-item-date">22 мая 2026</div>
+                                    <div class="notify-item-time">14:32:11</div>
+                                    <div class="notify-item-text">В Модуле 5 добавлены новые лабораторные работы по цифровой криминалистике. Рекомендуется выполнить до 28 мая.</div>
+                                    <div class="notify-item-status">Прочитано</div>
+                                </div>
+                                <div class="notify-item">
+                                    <div class="notify-item-date">20 мая 2026</div>
+                                    <div class="notify-item-time">14:32:11</div>
+                                    <div class="notify-item-text">Напоминание: срок выполнения заданий Модуля 4 истекает через 3 дня. Успейте завершить тестирование.</div>
+                                    <div class="notify-item-status">Прочитано</div>
+                                </div>
+                                <div class="notify-item">
+                                    <div class="notify-item-date">18 мая 2026</div>
+                                    <div class="notify-item-time">14:32:11</div>
+                                    <div class="notify-item-text">Открыт доступ к Модулю 3: «Корреляция событий и анализ логов». Выполните тест 3 для перехода к следующему модулю.</div>
+                                    <div class="notify-item-status">Прочитано</div>
+                                </div>
+                                <div class="notify-item">
+                                    <div class="notify-item-date">15 мая 2026</div>
+                                    <div class="notify-item-time">14:32:11</div>
+                                    <div class="notify-item-text">Ваша заявка на участие в курсе «Мониторинг и реагирование на инциденты» подтверждена администратором. Доступ к обучению открыт.</div>
+                                    <div class="notify-item-status">Прочитано</div>
+                                </div>
+                                <div class="notify-item">
+                                    <div class="notify-item-date">14 мая 2026</div>
+                                    <div class="notify-item-time">14:32:11</div>
+                                    <div class="notify-item-text">Вы успешно прошли тестовое задание в Модуле 1 (результат: 90%). Открыт доступ к Модулю 2.</div>
+                                    <div class="notify-item-status">Прочитано</div>
+                                </div>
+                                <div class="notify-item">
+                                    <div class="notify-item-date">12 мая 2026</div>
+                                    <div class="notify-item-time">14:32:11</div>
+                                    <div class="notify-item-text">Вы подали заявку на участие в курсе «Мониторинг и реагирование на инциденты». Заявка находится на рассмотрении.</div>
+                                    <div class="notify-item-status">Прочитано</div>
+                                </div>
+                            </div>
+
+                            <div class="pager">
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <span>...</span>
+                                <a href="#">125</a>
+                                <a href="#" class="pager-next"><svg><use xlink:href="images/sprite.svg#pager-next"></use></svg></a>
+                            </div>
+                        </div>
+                        <!-- notify END -->
+
+                    </div>
+                    <!-- content block END -->
+
+                </div>
+                <!-- content END -->
+
+                <!-- footer -->
+                <div class="footer">
+                    <div class="footer-content">
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-title">Контакты</div>
+                            <div class="footer-contacts-text">
+                                <a href="tel:+74951473344">+7 (495) 147-33-44</a><br>
+                                <a href="mailto:info@n3com.ru">info@n3com.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-title">Юр адрес</div>
+                            <div class="footer-contacts-text">173003, г. Великий Новгород,<br> Пер. Базовый, д.1</div>
+                        </div>
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-title">Обособленное подразделение</div>
+                            <div class="footer-contacts-text">115432 г. Москва,<br> Проспект Андропова, 18 к 5 ИНН 9725091298</div>
+                        </div>
+                        <div class="footer-social">
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-vk"></use></svg></a>
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-tg"></use></svg></a>
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-max"></use></svg></a>
+                            <a href="#" target="_blank"><svg><use xlink:href="images/sprite.svg#footer-social-rt"></use></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-link"><a href="#">Политика конфиденциальности</a></div>
+                        <div class="footer-bottom-link"><a href="#">Правила пользования ресурсом</a></div>
+                        <div class="footer-copyrights">2026&nbsp;&copy; ООО &laquo;Н3КОМ&raquo;</div>
+                    </div>
+                </div>
+                <!-- footer END -->
+
+            </div>
+            <!-- container END -->
+
+        </div>
+        <!-- wrapper END -->
+
+        <script>
+            var pathTemplate = './';
+        </script>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/fileupload/jquery.ui.widget.js"></script>
+        <script src="js/fileupload/jquery.iframe-transport.js"></script>
+        <script src="js/fileupload/jquery.fileupload.js"></script>
+        <script src="js/fileupload/jquery.fileupload-ui.js"></script>
+        <script src="js/swiper/swiper-bundle.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>
