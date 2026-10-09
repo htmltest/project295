@@ -14,6 +14,7 @@
     --color-blue: #00456E;
     --color-blue-10: rgba(0, 69, 110, 0.1);
     --color-blue-50: rgba(0, 69, 110, 0.5);
+    --color-blue-80: rgba(0, 69, 110, 0.8);
     --color-blue-03: rgba(0, 69, 110, 0.03);
 
     --color-FF: #FFFFFF;
@@ -100,7 +101,7 @@ li ol li::before {content:counter(subpoint, lower-alpha)'.'; counter-increment:s
 @media (min-width:1200px) {
     .btn:hover svg {fill:var(--color-FF)}
 }
-.btn:disabled {background:var(--color-black-04); cursor:default; color:var(--color-77)}
+.btn:disabled {background:var(--color-black-04); cursor:default; color:var(--color-77); pointer-events:none}
 
 @media (min-width:1401px) {
     .btn {border-radius:13px; padding:23px 52px}
@@ -120,6 +121,9 @@ li ol li::before {content:counter(subpoint, lower-alpha)'.'; counter-increment:s
 }
 
 .btn-blue {background:var(--color-blue); color:var(--color-FF)}
+@media (min-width:1200px) {
+    .btn-blue:hover {background:var(--color-blue-80)}
+}
 .btn-blue svg {fill:var(--color-FF)}
 
 .btn-red {background:var(--color-red); color:var(--color-FF)}
@@ -301,6 +305,9 @@ form {margin:0; padding:0}
 }
 
 .pager {margin:30px 0 0 0; display:flex; gap:0 5px; justify-content:center; text-align:center}
+.pager-pages {display:flex; gap:0 5px}
+.pager-left {display:flex; gap:0 5px}
+.pager-right {display:flex; gap:0 5px}
 .pager a,
 .pager span {display:flex; align-items:center; justify-content:center; border:1px solid var(--color-blue-03); min-width:34px; max-width:34px; height:34px; color:var(--color-blue); background:var(--color-blue-03); text-decoration:none; border-radius:10px; transition:background 0.2s, color 0.2s, border-color 0.2s}
 @media (min-width:1200px) {
@@ -309,9 +316,18 @@ form {margin:0; padding:0}
 .pager a.active {background:var(--color-FF); color:var(--color-black); font-weight:bold; border-color:var(--color-E0)}
 .pager a.pager-prev svg,
 .pager a.pager-next svg {display:block; width:5px; height:8px; fill:var(--color-blue)}
+.pager a.pager-first {margin:0 20px 0 0}
+.pager a.pager-last {margin:0 0 0 20px}
+.pager a.pager-first svg,
+.pager a.pager-last svg {display:block; width:5px; height:8px; fill:var(--color-blue)}
 
 @media (max-width:1199px) {
-    .pager {margin:20px 0 0 0}
+    .pager {margin:20px 0 0 0; flex-wrap:wrap; gap:5px; justify-content:space-between}
+    .pager-pages {order:0; width:100%; justify-content:center}
+    .pager-left {order:1}
+    .pager-right {order:2}
+    .pager a.pager-first {margin:0}
+    .pager a.pager-last {margin:0}
 }
 
 @media (min-width:1401px) {
@@ -1144,6 +1160,9 @@ form {margin:0; padding:0}
 .course-card-props.progress .course-card-props-reg h2 {display:flex; align-items:center; gap:0 5px; color:var(--color-blue)}
 .course-card-props.progress .course-card-props-reg h2 svg {min-width:18px; max-width:18px; height:18px; fill:var(--color-blue)}
 .course-card-props-reg .btn {display:flex; width:100%; padding:26px 0; background:var(--color-blue); color:var(--color-FF)}
+@media (min-width:1200px) {
+    .course-card-props-reg .btn:hover {background:var(--color-blue-80)}
+}
 .course-card-props.rejected .course-card-props-reg .btn {background:var(--color-red)}
 .course-card-props-reg-text {margin:0 0 10px 0; font-size:var(--text-size-p12); line-height:1em}
 .course-card-props-reg-status {display:flex; flex-direction:column; justify-content:center; align-items:center; padding:15px; gap:7px 0; min-height:94px; background:var(--color-blue-10); border-radius:10px}
