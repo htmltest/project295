@@ -504,6 +504,17 @@ $(document).ready(function() {
         curSelect.removeClass('open');
     });
 
+    $('body').on('click', '.notify-item-status a', function(e) {
+        const curLink = $(this);
+        $.ajax({
+            type: 'GET',
+            url: curLink.attr('href'),
+            cache: false
+        });
+        curLink.parents().filter('.notify-item').removeClass('new');
+        e.preventDefault();
+    });
+
 });
 
 function initForm(curForm) {

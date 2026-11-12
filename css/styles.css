@@ -9,6 +9,7 @@
     --color-black-04: rgba(0, 0, 0, 0.04);
 
     --color-red: #E7504F;
+    --color-red-80: rgba(231, 80, 79, 0.8);
     --color-red-05: rgba(231, 80, 79, 0.05);
 
     --color-blue: #00456E;
@@ -127,6 +128,9 @@ li ol li::before {content:counter(subpoint, lower-alpha)'.'; counter-increment:s
 .btn-blue svg {fill:var(--color-FF)}
 
 .btn-red {background:var(--color-red); color:var(--color-FF)}
+@media (min-width:1200px) {
+    .btn-red:hover {background:var(--color-red-80)}
+}
 
 form {margin:0; padding:0}
 
@@ -781,7 +785,7 @@ form {margin:0; padding:0}
 }
 
 .notify-headers {display:flex; gap:0 10px; align-items:center; background:var(--color-77); border-radius:7px; padding:7px 10px; font-size:var(--text-size-p12); line-height:1em; color:var(--color-FF)}
-.notify-header-date {min-width:80px; max-width:80px}
+.notify-header-date {min-width:100px; max-width:100px}
 .notify-header-time {min-width:70px; max-width:70px}
 .notify-header-text {flex-grow:1}
 .notify-header-status {min-width:60px; max-width:60px}
@@ -789,12 +793,20 @@ form {margin:0; padding:0}
 .notify-item:nth-child(even) {background:var(--color-black-04)}
 .notify-item.new {color:var(--color-blue)}
 .notify-item.new:nth-child(even) {background:var(--color-blue-10)}
-.notify-item-date {min-width:80px; max-width:80px}
+.notify-item-date {min-width:100px; max-width:100px}
 .notify-item-time {min-width:70px; max-width:70px}
 .notify-item-text {flex-grow:1}
 .notify-item.new .notify-item-text {font-weight:bold}
-.notify-item-status {min-width:60px; max-width:60px; color:#AAAAAA}
-.notify-item.new .notify-item-status {color:var(--color-blue)}
+.notify-item-status {min-width:60px; max-width:60px; display:flex; justify-content:flex-end; visibility:hidden}
+.notify-item.new .notify-item-status {visibility:visible}
+.notify-item-status a {display:block; width:24px; opacity:0; transition:opacity 0.2s}
+@media (min-width:1200px) {
+    .notify-item.new:hover .notify-item-status a {opacity:1}
+}
+.notify-item-status svg {display:block; width:24px; height:24px; fill:none; stroke:var(--color-blue); transition:stroke 0.2s}
+@media (min-width:1200px) {
+    .notify-item-status a:hover svg {stroke:rgba(0, 69, 110, 0.8)}
+}
 
 @media (max-width:1199px) {
     .notify-headers {display:none}
@@ -806,15 +818,16 @@ form {margin:0; padding:0}
     .notify-item-time {min-width:0; max-width:none}
     .notify-item-text {width:100%}
     .notify-item-status {min-width:0; max-width:none; width:100%; text-align:right}
+    .notify-item-status a {opacity:1}
 }
 
 @media (min-width:1401px) {
     .notify-headers {gap:0 13px; border-radius:9px; padding:9px 13px}
-    .notify-header-date {min-width:104px; max-width:104px}
+    .notify-header-date {min-width:120px; max-width:120px}
     .notify-header-time {min-width:91px; max-width:91px}
     .notify-header-status {min-width:78px; max-width:78px}
     .notify-item {gap:0 13px; border-radius:9px; padding:9px 13px}
-    .notify-item-date {min-width:104px; max-width:104px}
+    .notify-item-date {min-width:120px; max-width:120px}
     .notify-item-time {min-width:91px; max-width:91px}
     .notify-item-status {min-width:78px; max-width:78px}
 }
@@ -977,8 +990,9 @@ form {margin:0; padding:0}
     .main-notify .swiper-slide {width:auto}
     .main-notify-inner {margin:0 20px}
     .main-notify .notify-content {display:flex}
-    .main-notify .notify-item {margin:0 0 0 20px; padding:0 0 0 20px; border-top:none; border-left:1px solid var(--color-E0); min-width:150px; max-width:150px}
+    .main-notify .notify-item {margin:0 0 0 20px; padding:0 0 0 20px; border-top:none; border-left:1px solid var(--color-E0); min-width:150px; max-width:150px; flex-direction:column; align-items:stretch; justify-content:flex-start; position:relative}
     .main-notify .notify-item:nth-child(2) {margin:0; padding:0; border-left:none}
+    .main-notify .notify-item-time {position:absolute; right:0; top:0}
 }
 
 @media (min-width:1401px) {
@@ -1164,6 +1178,9 @@ form {margin:0; padding:0}
     .course-card-props-reg .btn:hover {background:var(--color-blue-80)}
 }
 .course-card-props.rejected .course-card-props-reg .btn {background:var(--color-red)}
+@media (min-width:1200px) {
+    .course-card-props.rejected .course-card-props-reg .btn:hover {background:var(--color-red-80)}
+}
 .course-card-props-reg-text {margin:0 0 10px 0; font-size:var(--text-size-p12); line-height:1em}
 .course-card-props-reg-status {display:flex; flex-direction:column; justify-content:center; align-items:center; padding:15px; gap:7px 0; min-height:94px; background:var(--color-blue-10); border-radius:10px}
 .course-card-props-reg-status-title {display:flex; align-items:center; gap:0 5px; font-weight:bold; font-size:var(--text-size-p12); line-height:1em; color:var(--color-blue); text-transform:uppercase}
